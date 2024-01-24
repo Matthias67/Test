@@ -22,7 +22,7 @@ jobs:
         dotnet-version: 7.0.x
     - name: Restore dependencies
       run: dotnet restore
-      working-directory: WebApplication1
+      working-directory: WebApplication1/WebApplication1
     - name: Build
       run: dotnet build --no-restore
     - name: Test
