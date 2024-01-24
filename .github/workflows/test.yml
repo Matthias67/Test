@@ -21,8 +21,8 @@ jobs:
       with:
         dotnet-version: 7.0.x
     - name: Restore dependencies
-      run: dotnet restore ./WebApplication1.sln
+      run: dotnet restore ./WebApplication1/WebApplication1.sln
     - name: Build
-      run: dotnet build WebApplication1/WebApplication1.csproj --configuration Release --no-restore
+      run: dotnet build ./WebApplication1/WebApplication1/WebApplication1.csproj --configuration Release --no-restore
     - name: Test
-      run: dotnet test ./WebApplication1.sln --configuration Release --no-restore
+      run: dotnet test ./WebApplication1/WebApplication1.sln --configuration Release --no-restore
